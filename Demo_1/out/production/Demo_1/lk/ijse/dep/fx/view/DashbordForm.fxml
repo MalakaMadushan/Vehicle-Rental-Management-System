@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="436.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.fx.controller.DashbordFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="87.0" strokeType="INSIDE" width="673.0">
+         <fill>
+            <LinearGradient endX="0.7428571428571429" endY="0.6285714285714286" startX="0.1380952380952381" startY="0.24761904761904754">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="AQUA" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="0.7142857142857143" endY="0.5857142857142857" startX="0.10952380952380952" startY="0.26666666666666666">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="AQUA" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke></Rectangle>
+      <Label alignment="CENTER" layoutX="166.0" layoutY="22.0" prefHeight="41.0" prefWidth="259.0" text="Vehicle Rental System">
+         <font>
+            <Font name="Arial Narrow Bold" size="28.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.48571428571428577" endY="0.7" startX="0.3476190476190476" startY="0.5047619047619047">
+               <stops>
+                  <Stop color="#f8f8f8" />
+                  <Stop color="#f7f7f7" offset="0.007662835249042145" />
+                  <Stop color="WHITE" offset="0.007662835249042145" />
+                  <Stop color="#4ccf8d" offset="0.9381443298969071" />
+                  <Stop color="WHITE" offset="0.9553264604810997" />
+                  <Stop color="WHITE" offset="0.9553264604810997" />
+                  <Stop color="#4bd08f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="73.0" fitWidth="87.0" layoutX="24.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/5.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="158.0" layoutX="497.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="283.0" fitWidth="673.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="87.0">
+         <image>
+            <Image url="@../assest/backgroundimage.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgAvailable" fitHeight="100.0" fitWidth="100.0" layoutX="24.0" layoutY="97.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/car-badge.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCustomer" fitHeight="100.0" fitWidth="100.0" layoutX="124.0" layoutY="97.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/customer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCar" fitHeight="100.0" fitWidth="100.0" layoutX="224.0" layoutY="97.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/traffic-jam.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImgRentDetails" fitHeight="100.0" fitWidth="100.0" layoutX="323.0" layoutY="97.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/car-rental.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPayment" fitHeight="100.0" fitWidth="100.0" layoutX="423.0" layoutY="97.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/cash-in-hand.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgReturn" fitHeight="100.0" fitWidth="100.0" layoutX="523.0" layoutY="97.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/return.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="12.0" layoutY="290.0" prefHeight="33.0" prefWidth="622.0" text="Welcome" textFill="#830bd6">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="24.0" layoutY="324.0" prefHeight="33.0" prefWidth="598.0" text="Please select one of above main operations to proceed" textFill="#e1e1e1">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="73.0" layoutY="363.0" strokeType="INSIDE" width="673.0">
+         <fill>
+            <LinearGradient endX="0.7428571428571429" endY="0.6285714285714286" startX="0.1380952380952381" startY="0.24761904761904754">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="AQUA" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="0.7142857142857143" endY="0.5857142857142857" startX="0.10952380952380952" startY="0.26666666666666666">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="AQUA" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Rectangle>
+      <Label alignment="CENTER" layoutX="184.0" layoutY="382.0" prefHeight="17.0" prefWidth="289.0" text="Copyright Malaka Madushan  - Dep 2">
+         <textFill>
+            <LinearGradient endX="0.8142857142857144" endY="0.6904761904761905" startX="0.7523809523809524" startY="0.7571428571428571">
+               <stops>
+                  <Stop color="#3ef072" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="423.0" prefWidth="602.0" stylesheets="@/lk/ijse/dep/fx/view/style/AvailableVehicle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.fx.controller.AvailableFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="87.0" strokeType="INSIDE" width="602.0">
+         <fill>
+            <LinearGradient endX="0.7857142857142857" endY="0.6333333333333333" startX="0.1857142857142857" startY="0.2">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="AQUA" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="0.7857142857142857" endY="0.6333333333333333" startX="0.1857142857142857" startY="0.2">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="AQUA" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke></Rectangle>
+        <Button fx:id="btnBack" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="75.0" prefWidth="85.0" style="-fx-background-color: #000000;" />
+        <ImageView disable="true" fitHeight="75.0" fitWidth="85.0" layoutX="19.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assest/home-page.png" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="166.0" layoutY="22.0" prefHeight="41.0" prefWidth="257.0" text="Available Vehicles">
+            <font>
+                <Font name="Arial Narrow Bold" size="28.0" />
+            </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.4809523809523809" endY="0.5809523809523809" startX="0.5523809523809524" startY="0.38095238095238093">
+               <stops>
+                  <Stop color="#62d95f" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+        </Label>
+        <ImageView disable="true" fitHeight="73.0" fitWidth="158.0" layoutX="456.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assest/6.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="414.0" layoutY="84.0" stroke="WHITE" strokeType="INSIDE" width="602.0" />
+      <JFXDatePicker fx:id="txtFromDate" defaultColor="AQUA" layoutX="30.0" layoutY="129.0" promptText="From Date" />
+        <Button fx:id="btnSearch" layoutX="463.0" layoutY="127.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="28.0" prefWidth="85.0" style="-fx-background-color: #00ffff;" text="Search" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tblAvailable" layoutX="16.0" layoutY="217.0" onMouseClicked="#tblAvailable_On_Click" prefHeight="184.0" prefWidth="571.0">
+            <columns>
+                <TableColumn prefWidth="115.0" text="Vehicle Number" />
+            <TableColumn prefWidth="82.0" text="Name" />
+                <TableColumn prefWidth="91.0" text="Model" />
+                <TableColumn prefWidth="91.0" text="Type" />
+                <TableColumn prefWidth="105.0" text=" Vehicle Rate" />
+                <TableColumn prefWidth="84.0" text="Colour" />
+            </columns>
+        </TableView>
+      <Button fx:id="btnNext" layoutX="501.0" layoutY="411.0" mnemonicParsing="false" onAction="#btnNextOnAction" prefHeight="28.0" prefWidth="85.0" style="-fx-background-color: #1E90FF;" text="Next" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="150.0" layoutY="454.0" prefHeight="17.0" prefWidth="289.0" text="Copyright Malaka Madushan  - Dep 2" />
+      <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="122.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/th.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="423.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/th.jpg" />
+         </image>
+      </ImageView>
+      <JFXDatePicker fx:id="txtToDate" defaultColor="AQUA" layoutX="277.0" layoutY="129.0" promptText="To Date" />
+
+    </children>
+</AnchorPane>
